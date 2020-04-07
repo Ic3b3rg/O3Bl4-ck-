@@ -1,0 +1,190 @@
+body{
+    width:100%;
+    margin:0;
+    background-color: rgba(253, 186, 0, 0.829);
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    position:absolute;
+}
+.navbar{
+    margin-right:10%;
+}
+ul{
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(19, 18, 18);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+}
+@media only screen and (max-width: 600px){
+    ul{
+        position: relative;
+        background-color: rgb(19, 18, 18);
+
+    }}
+ @media only screen and (max-width: 600px){
+        ul {
+            position: relative;
+            background-color: rgb(19, 18, 18);
+    
+        }}
+li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+li a{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+
+}
+@media only screen and (max-width: 600px){
+    li a {
+        padding:10px 0px 10px 0px ;
+    }
+}
+li a:hover{
+    background-color: rgba(253, 186, 0, 0.829);
+    color: rgb(19, 18, 18);
+    transition: 0.5s;
+}
+.active{
+    background-color: rgba(253, 186, 0, 0.829);
+    color: rgb(19, 18, 18);
+}
+.logo{
+    width:3%;
+    float:left;
+    background-color: white;
+    border-radius: 50%;
+    margin: 2px 0px 0px 20px;
+}
+@media only screen and (max-width: 600px){
+    .logo {
+        width: 8%;
+    }}
+.slider{
+    width:100%;
+}
+.slider img{
+    width:100%;
+    height: 500px;
+}
+.description p{
+    width: 75%;
+    display: inline-block;
+}
+.container{
+    padding: 50px;
+}
+
+.card-container-black{
+    background-color: rgb(19, 18, 18);
+    color:rgba(253, 186, 0, 0.829);
+    align-content: center;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.card-container-black p{
+    color:white;
+}
+
+.card{
+    display: inline-block;
+    border: 1px solid rgba(253, 186, 0, 0.829);
+    margin:16px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+}
+button{
+    display:inline-block;
+    margin: 1% 0 0 9%;
+    position: absolute;
+    background-color:  rgba(253, 186, 0, 0.829);
+    border: 2px solid  rgb(19, 18, 18);
+    padding: 10px 32px 10px 32px;
+    z-index:-1;
+}
+@media only screen and (max-width: 600px) {
+    button {
+        display: block;
+        margin-left:23%;
+    }}
+
+button a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(19, 18, 18);
+
+}
+.card img{
+    width:25%;
+    border-radius: 50%;
+    border: 1px solid rgba(253, 186, 0, 0.829);
+    margin-top: -60px;
+}
+.next, .prev{
+position: absolute;
+color:black;
+background-color:  rgba(253, 186, 0, 0.109,);
+font-size: 20px;
+cursor: pointer;
+transition: 2s;
+padding:10px
+
+}
+.next:hover, .prev:hover{
+    background-color:  rgba(253, 186, 0);
+    transition: 2s;
+    border-radius: 10px;
+}
+.next{
+    margin: 15% 0px 0px 97%;
+}
+
+.prev{
+    margin-top: 15%;
+    margin-left: 1%;;
+}
+
+.visible{
+    display: block;
+    transition: 2s;
+}
+.invisible{
+    display: none;
+    transition: 2s;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        text-align: center;
+    }
+};
+
+@media only screen and (max-width: 1000px){
+    .card{
+        margin-top: 60px!important;
+    }
+};
+@media only screen and (max-width: 1000px){
+    .next{
+        margin: 15% 0px 0px 90%;
+        color: (253, 186, 0, 0.829);
+    }
+};
